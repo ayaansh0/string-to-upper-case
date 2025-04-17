@@ -1,28 +1,21 @@
-#create class
+# create class
 class IOString():
 
-
-    #constructor to set defuault values
+	# constructor to set default value
     def __init__(self):
         self.str1 = ""
 
+	# function to get input from user
+    def get_String(self):
+        self.str1 = input("Enter String : ")
 
-        #function to get input from user
-        def get_String(self):
-            self.str1 = input("Enter a string: ")
+	# function to print the string in upper case
+    def print_String(self):
+        print("Result is :", self.str1.upper())
 
-
-            #function to print the string in upper case 
-        def print_String(self):
-            print("Resuly is: ", self.str1.upper())
-
-#object creation 
+# Object creation
 str1 = IOString()
 
-#call functions 
-str1.get_String()
-
-
-#call fucntions 
+# Call functions
 str1.get_String()
 str1.print_String()
